@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html id="html" lang="lt">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Asociacija Pakalnių kaimo bendruomenė vienija Pakalnių kaimo gyventojus, kurie siekia bendrystės ir veiklų kartu. Nuo kaimo švenčių ir kultūros iki įvairiausių naujienų – čia rasite naudingų ir įdomių įrašų.">
+        <meta name="keywords" content="Pakalniai, kaimas, bendruomenė, gamta, Utena, Utenos apskritis, renginiai, šventės, projektai, naujienos, kontaktai, pagalba, galerija, informacija, bendrystė, veikla, veiklos">
+        <title>Galerija | Pakalnių kaimo bendruomenė</title>
+
+        <link rel="stylesheet" href="assets/css/default.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        <link rel="stylesheet" href="assets/css/accessibility.css">
+        <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css">
+
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    </head>
+
+    <body id="body">
+
+        <div class="loading-block preloader">
+            <span class="loader"></span>
+        </div>
+
+        <div id="amodal" class="accessibility-tab">
+            <div onclick="accessibilitymodal()" class="accessibility-btn"><i class="fa-regular fa-universal-access"></i></div>
+            <div class="accessibility-box">
+                <p>Įrankiai neįgaliesiems</p>
+                <div class="accessibility-box-item">
+                    <p>Turinio dydis<i class="fa-solid fa-magnifying-glass"></i></p>
+                    <div class="accessibility-box-item-select">
+                        <input type="radio" id="asize1" name="asize" value="0">
+                        <label for="asize1">Numatytas</label>
+                        <input type="radio" id="asize2" name="asize" value="1">
+                        <label for="asize2">Didelis</label>
+                        <input type="radio" id="asize3" name="asize" value="2">
+                        <label for="asize3">Labai didelis</label>
+                        <input type="radio" id="asize4" name="asize" value="3">
+                        <label for="asize4">Didžiausias</label>
+                    </div>
+                </div>
+                <hr>
+                <div class="accessibility-box-item">
+                    <p>Turinio kontrastas<i class="fa-solid fa-circle-half-stroke"></i></p>
+                    <div class="accessibility-box-item-select">
+                        <input type="radio" id="acontrast1" name="acontrast" value="0">
+                        <label for="acontrast1">Numatytas</label>
+                        <input type="radio" id="acontrast2" name="acontrast" value="1">
+                        <label for="acontrast2">Aukštas</label>
+                    </div>
+                </div>
+                <hr>
+                <div class="accessibility-box-item">
+                    <p>Teksto šriftas<i class="fa-solid fa-font-case"></i></p>
+                    <div class="accessibility-box-item-select">
+                        <input type="radio" id="afont1" name="afont" value="0">
+                        <label for="afont1">Numatytas</label>
+                        <input type="radio" id="afont2" name="afont" value="1">
+                        <label for="afont2">Times New Roman</label>
+                        <input type="radio" id="afont3" name="afont" value="2">
+                        <label for="afont3">Euclid Circular B</label>
+                        <input type="radio" id="afont4" name="afont" value="3">
+                        <label for="afont4">Josefin Sans</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <header id="header" class="header--oncolor">
+            <div class="header">
+                <div class="header-logo"><img src="assets/images/logo/pkb_logo_white_200_f8.png" alt="Pakalnių kaimo bendruomenės logotipas"></div>
+                <nav class="header-nav">
+                    <a href="index.html">Apie</a>
+                    <a href="news.html">Naujienos</a>
+                    <a href="events.html">Renginiai</a>
+                    <a href="gallery.html">Galerija</a>
+                    <a href="contacts.html">Kontaktai</a>
+                </nav>
+                <div class="header-btn">
+                    <i class="fa-thin fa-circle-user"></i>
+                    <a>Paskyra</a>
+                </div>
+
+                <div onclick="openmobilenav()" class="header-mobile-menu">
+                    <i class="fa-light fa-bars"></i>
+                </div>
+
+                <div id="mobnav" class="mobile-navbar mobile-navbar--hidden mobile-navbar--disabled">
+                    <nav class="header-nav-mobile">
+                        <div class="header-nav-mobile-top">
+                            <div class="header-btn-mobile">
+                                <i class="fa-light fa-circle-user"></i>
+                                <a>Paskyra</a>
+                            </div>
+
+                            <a onclick="closemobilenav()"><i class="fa-light fa-xmark"></i></a>
+                        </div>
+                        <div class="header-nav-mobile-bottom">
+                            <div class="mobile-nav-btn">
+                                <i class="fa-light fa-landmark"></i>
+                                <a href="index.html">Apie</a>
+                            </div>
+
+                            <div class="mobile-nav-btn">
+                                <i class="fa-light fa-people-group"></i>
+                                <a href="news.html">Naujienos</a>
+                            </div>
+
+                            <div class="mobile-nav-btn">
+                                <i class="fa-light fa-party-horn"></i>
+                                <a href="events.html">Renginiai</a>
+                            </div>
+
+                            <div class="mobile-nav-btn">
+                                <i class="fa-light fa-images"></i>
+                                <a href="gallery.html">Galerija</a>
+                            </div>
+
+                            <div class="mobile-nav-btn">
+                                <i class="fa-light fa-hands-holding-heart"></i>
+                                <a href="contacts.html">Kontaktai</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+
+            </div>
+        </header>
+
+        <section class="gallery-hero">
+            <div class="gallery-grid">
+                <div class="gallery-grid-title gallery-grid-img--wide">
+                    <h1>Pakalnių bendruomenės galerija</h1>
+                    <p>Pakalnių kaimo bendruomenės galerija - eksponuojamos vietinių gyventojų akimirkos, peizažai, kasdieninis gyvenimas. Kuruojami kūriniai atspindi Pakalnių kaimelio meno bendruomenės meistriškumą ir kultūrinę įvairovę, kartu skatinant kaimo kultūrines ir ekonomines iniciatyvas.</p>
+                </div>
+                
+                <div class="gallery-grid-img">
+                    <img src="assets/images/uploads/optimized/15o.jpg" alt="">
+                    <div class="gallery-grid-img-info">
+                        <span>Audrius Šimkūnas</span>
+                        <span>2020</span>
+                    </div>
+                </div>
+            
+                <div class="gallery-grid-img gallery-grid-img--big">
+                    <img src="assets/images/uploads/optimized/16o.jpg" alt="">
+                    <div class="gallery-grid-img-info">
+                        <span>Audrius Šimkūnas</span>
+                        <span>2020</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-grid-img">
+                    <img src="assets/images/uploads/optimized/4o.jpg" alt="">
+                    <div class="gallery-grid-img-info">
+                        <span>Audrius Šimkūnas</span>
+                        <span>2020</span>
+                    </div>
+                </div>
+
+                <div class="gallery-grid-img gallery-grid-img--big">
+                    <img src="assets/images/uploads/optimized/3o.jpg" alt="">
+                    <div class="gallery-grid-img-info">
+                        <span>Ervinas Mitkevičius</span>
+                        <span>2022</span>
+                    </div>
+                </div>
+
+                <div class="gallery-grid-img">
+                    <img src="assets/images/uploads/optimized/5o.jpg" alt="">
+                    <div class="gallery-grid-img-info">
+                        <span>Utenos r. veiklos grupė</span>
+                        <span>2019</span>
+                    </div>
+                </div>
+
+                <div class="gallery-grid-img">
+                    <img src="assets/images/uploads/optimized/6o.jpg" alt="">
+                    <div class="gallery-grid-img-info">
+                        <span>Utenos r. veiklos grupė</span>
+                        <span>2019</span>
+                    </div>
+                </div>
+
+                <div class="gallery-grid-img gallery-grid-img--wide">
+                    <img src="assets/images/uploads/optimized/1o.jpg" alt="">
+                    <div class="gallery-grid-img-info">
+                        <span>Utenos turizmo centras</span>
+                        <span>2019</span>
+                    </div>
+                </div>
+
+                <div class="gallery-grid-img gallery-grid-img--wide">
+                    <img src="assets/images/uploads/optimized/7o.jpg" alt="">
+                    <div class="gallery-grid-img-info">
+                        <span>Utenos r. veiklos grupė</span>
+                        <span>2019</span>
+                    </div>
+                </div>
+
+                <div class="gallery-grid-img">
+                    <img src="assets/images/uploads/optimized/8o.jpg" alt="">
+                    <div class="gallery-grid-img-info">
+                        <span>Utenos turizmo centras</span>
+                        <span>2019</span>
+                    </div>
+                </div>
+
+                <div class="gallery-grid-img gallery-grid-img--vertical">
+                    <img src="assets/images/uploads/optimized/19o.jpg" alt="">
+                    <div class="gallery-grid-img-info">
+                        <span>Ervinas Mitkevičius</span>
+                        <span>2022</span>
+                    </div>
+                </div>
+
+                <div class="gallery-grid-img">
+                    <img src="assets/images/uploads/optimized/11o.jpg" alt="">
+                    <div class="gallery-grid-img-info">
+                        <span>Audrius Šimkūnas</span>
+                        <span>2020</span>
+                    </div>
+                </div>
+
+                <div class="gallery-grid-img gallery-grid-img--wide">
+                    <img src="assets/images/uploads/optimized/12o.jpg" alt="">
+                    <div class="gallery-grid-img-info">
+                        <span>Vytautas Statulevičius</span>
+                        <span>2010</span>
+                    </div>
+                </div>
+
+                <div class="gallery-grid-img">
+                    <img src="assets/images/uploads/optimized/13o.jpg" alt="">
+                    <div class="gallery-grid-img-info">
+                        <span>Utenos r. veiklos grupė</span>
+                        <span>2019</span>
+                    </div>
+                </div>
+
+                <div class="gallery-grid-img gallery-grid-img--big">
+                    <img src="assets/images/uploads/optimized/20o.jpg" alt="">
+                    <div class="gallery-grid-img-info">
+                        <span>Ervinas Mitkevičius</span>
+                        <span>2022</span>
+                    </div>
+                </div>
+
+                <div class="gallery-grid-img gallery-grid-img--wide">
+                    <img src="assets/images/uploads/optimized/10o.jpg" alt="">
+                    <div class="gallery-grid-img-info">
+                        <span>Utenos r. veiklos grupė</span>
+                        <span>2019</span>
+                    </div>
+                </div>
+
+                <div class="gallery-grid-img">
+                    <img src="assets/images/uploads/optimized/2o.jpg" alt="">
+                    <div class="gallery-grid-img-info">
+                        <span>Audrius Šimkūnas</span>
+                        <span>2021</span>
+                    </div>
+                </div>
+
+                <div class="gallery-grid-img gallery-grid-img--vertical">
+                    <img src="assets/images/uploads/optimized/22o.jpg" alt="">
+                    <div class="gallery-grid-img-info">
+                        <span>Laurynas Kavaliauskas</span>
+                        <span>2021</span>
+                    </div>
+                </div>
+
+                <div class="gallery-grid-img">
+                    <img src="assets/images/uploads/optimized/14o.jpg" alt="">
+                    <div class="gallery-grid-img-info">
+                        <span>Audrius Šimkūnas</span>
+                        <span>2021</span>
+                    </div>
+                </div>
+
+                <div class="gallery-grid-img">
+                    <img src="assets/images/uploads/optimized/9o.jpg" alt="">
+                    <div class="gallery-grid-img-info">
+                        <span>Audrius Šimkūnas</span>
+                        <span>2021</span>
+                    </div>
+                </div>
+
+                <div class="gallery-grid-img">
+                    <img src="assets/images/uploads/optimized/21o.jpg" alt="">
+                    <div class="gallery-grid-img-info">
+                        <span>Ervinas Mitkevičius</span>
+                        <span>2022</span>
+                    </div>
+                </div>
+
+                <div class="gallery-grid-img">
+                    <img src="assets/images/uploads/optimized/23o.jpg" alt="">
+                    <div class="gallery-grid-img-info">
+                        <span>Utenos turizmo centras</span>
+                        <span>2019</span>
+                    </div>
+                </div>
+
+                <div class="gallery-grid-img gallery-grid-img--wide">
+                    <img src="assets/images/uploads/optimized/18o.jpg" alt="">
+                    <div class="gallery-grid-img-info">
+                        <span>Gitana Gutauskaitė</span>
+                        <span>2021</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer">
+                <p>2022 © Pakalnių kaimo bendruomenė</p>
+                <div class="footer-links">
+                    <a><i class="fa-light fa-envelope"></i></a>
+                    <a><i class="fa-light fa-link"></i></a>
+                    <a><i class="fa-light fa-share-nodes"></i></a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="./assets/js/default.js"></script>
+    </body>
+</html>

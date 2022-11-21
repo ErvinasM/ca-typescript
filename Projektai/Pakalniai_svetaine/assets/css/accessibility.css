@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/euclid-circular-b');
+
+.afont1 {
+    font-family: "Times New Roman", Times, serif;
+}
+
+.afont2 {
+    font-family: 'Euclid Circular B', sans-serif;
+}
+
+.afont3 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.asize1 {
+    zoom: 115%;
+}
+
+.asize2 {
+    zoom: 130%;
+}
+
+.asize3 {
+    zoom: 150%;
+}
+
+.acontrast1:root {
+    --t-riflegreen: #21261c !important;
+    --t-nickel: #5b5c59;
+    --t-lilacluster: #917b86;
+    --t-gainsboro: white;
+    --t-platinum: white;
+    --t-light: #ffffff;
+    --t-dark: #000000;
+
+    --f-weigth100: 200;
+    --f-weigth200: 300;
+    --f-weigth300: 400;
+    --f-weigth400: 500;
+    --f-weigth500: 600;
+    --f-weigth600: 700;
+    --f-weigth700: 800;
+}
+
+.acontrast1 .acblack {
+    color: black;
+}
+
+.acontrast1 .index-hero-content--contrast {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8) ),url(../images/bg/pakalniu_piliakalnis_opt.jpg);
+}
+
+.accessibility-tab {
+    position: fixed;
+    bottom: 0;
+    right: calc(100% - 47px);
+    z-index: 1000;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    transition: all 0.5s;
+}
+
+.accessibility-tab-open {
+    right: calc(100% - 337px); 
+}
+
+.accessibility-btn {
+    padding: 8px 12px;
+    background: black;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.accessibility-box {
+    height: auto;
+    width: 250px;
+    max-width: 250px;
+    background: white;
+    padding: 20px;
+    font-family: 'Euclid Circular B', sans-serif !important;
+    box-shadow: #00000026 0px 0px 8px 1px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.accessibility-box > p {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.accessibility-box-item {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 6px;
+}
+
+.accessibility-box-item > p {
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accessibility-box-item > p > i {
+    width: 25px;
+    font-size: 13px;
+    color: grey;
+}
+
+.accessibility-box-item-select {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.accessibility-box-item-select label {
+    display: inline-block;
+    width: auto;
+    padding: 5px;
+    background: #fcfcfc;
+    border: 1px solid #e8e8e8;
+    transition: all 0.2s;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.accessibility-box-item-select input[type="radio"] {
+    display: none;
+}
+  
+.accessibility-box-item-select input[type="radio"]:checked + label {
+    background: black;
+    color: white;
+}
+
+
+@media screen and (max-width: 1100px)
+    { 
+        .asize3 .header-mobile-menu {
+            display: flex;
+            font-size: 22px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .asize3 .header-nav, .asize3 .header-btn {
+            display: none;
+        }
+
+        .asize3 .mobile-navbar {
+            display: flex;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background: #00000099;
+            align-items: flex-end;
+            transition: all 0.2s;
+        }
+
+    }
+
+@media screen and (max-width: 980px)
+    { 
+        .asize2 .header-mobile-menu, .asize1 .header-mobile-menu  {
+            display: flex;
+            font-size: 22px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .asize2 .header-nav, .asize2 .header-btn, .asize1 .header-nav, .asize1 .header-btn {
+            display: none;
+        }
+
+        .asize2 .mobile-navbar , .asize1 .mobile-navbar {
+            display: flex;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background: #00000099;
+            align-items: flex-end;
+            transition: all 0.2s;
+        }
+
+    }
+
+
+@media screen and (max-width: 768px)
+    {
+        .accessibility-btn {
+                font-size: 16px;
+        }
+
+        .accessibility-tab {
+                right: calc(100% - 36px);
+        }
+
+        .accessibility-tab-open {
+                right: calc(100% - 328px);
+        }
+
+        .accessibility-box > p {
+                font-size: 17px;
+        }
+
+        .accessibility-box-item > p {
+                font-size: 15px;
+        }
+
+        .accessibility-box-item > p > i {
+                font-size: 12px;
+                width: auto;
+        }
+
+        .accessibility-box-item-select label {
+                font-size: 13px;
+        }
+    }
+
+@media screen and (max-width: 480px)
+    {
+            .accessibility-btn {
+                font-size: 14px;
+        }
+
+        .accessibility-tab {
+                right: calc(100% - 36px);
+        }
+
+        .accessibility-tab-open {
+                right: calc(100% - 328px);
+        }
+
+        .accessibility-box > p {
+                font-size: 15px;
+        }
+
+        .accessibility-box-item > p {
+                font-size: 13px;
+        }
+
+        .accessibility-box-item > p > i {
+                font-size: 10px;
+                width: auto;
+        }
+
+        .accessibility-box-item-select label {
+                font-size: 11px;
+        }
+    }
