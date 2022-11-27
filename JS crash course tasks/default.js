@@ -1,17 +1,17 @@
-alert('Hello World');
-console.log('Hello World');
-console.error('This is an error');
-console.warn('This is a warning');
+alert('Sveikas pasauli');
+console.log('Sveikas pasauli');
+console.error('Klaida');
+console.warn('Pranešimas');
 
-const name = 'Brad';
-const age = 37;
-const rating = 3.5;
+const name = 'Ervinas';
+const age = 19;
+const rating = 4.9;
 const isCool = true;
 
 console.log('My name is ' + name + ' and I am ' + age);
 console.log(`My name is ${name} and I am ${age}`);
 
-const s = 'Hello World';
+const s = 'Sveikas pasauli';
 let val;
 
 val = s.length;
