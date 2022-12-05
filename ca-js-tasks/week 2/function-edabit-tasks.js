@@ -113,137 +113,106 @@ console.groupCollapsed('7. Fix the Bug: Simple Array Manipulation - https://edab
 }
 console.groupEnd();
 
-console.groupCollapsed('8. Two Makes Ten - https://edabit.com/challenge/5erCDJ8eJDrXkmwTK');
+console.groupCollapsed('8. Largest Swap - https://edabit.com/challenge/hD3euqPHM82Cbr7R8');
 {
-    function isTen(a,b)
+    function largestSwap(a) 
         {
-            if (a+b == 10 || a == 10 || b == 10)
-                {
-                    return true;
-                }
-            else
-                {
-                    return false;
-                }
+            return a / 10 > a % 10;
         }
     
-    console.log(isTen(7,3));
+    console.log(largestSwap(57));
 }
 console.groupEnd();
 
-console.groupCollapsed('9. Two Makes Ten - https://edabit.com/challenge/5erCDJ8eJDrXkmwTK');
+console.groupCollapsed('9. Convenience Store - https://edabit.com/challenge/erFxBbqzZPSegMwnc');
 {
-    function isTen(a,b)
+    function changeEnough(array, toPay) 
         {
-            if (a+b == 10 || a == 10 || b == 10)
-                {
-                    return true;
-                }
-            else
-                {
-                    return false;
-                }
+            let q = array[0]*0.25;
+            let d = array[1]*0.1;
+            let n = array[2]*0.05;
+            let p = array[3]*0.01;
+
+            return (q+d+n+p >= toPay);
         }
     
-    console.log(isTen(7,3));
+    console.log(changeEnough([2, 100, 0, 0], 14.11));
 }
 console.groupEnd();
 
-console.groupCollapsed('10. Two Makes Ten - https://edabit.com/challenge/5erCDJ8eJDrXkmwTK');
+console.groupCollapsed('10. Maximum Edge of a Triangle - https://edabit.com/challenge/nhXofMMyrowMyr9Nv');
 {
-    function isTen(a,b)
+    function thirdEdge(a, b) 
         {
-            if (a+b == 10 || a == 10 || b == 10)
-                {
-                    return true;
-                }
-            else
-                {
-                    return false;
-                }
+            return (a + b)-1;
         }
     
-    console.log(isTen(7,3));
+    console.log(thirdEdge(9,2));
 }
 console.groupEnd();
 
-console.groupCollapsed('11. Two Makes Ten - https://edabit.com/challenge/5erCDJ8eJDrXkmwTK');
+console.groupCollapsed('11. Add up the Numbers from a Single Number - https://edabit.com/challenge/4gzDuDkompAqujpRi');
 {
-    function isTen(a,b)
+    function addUp(a) 
         {
-            if (a+b == 10 || a == 10 || b == 10)
+            let sum = 0;
+            for (let i = 0; i <= a; i++) 
                 {
-                    return true;
+                    sum += i;
                 }
-            else
-                {
-                    return false;
-                }
+            return sum;
         }
     
-    console.log(isTen(7,3));
+    console.log(addUp(13));
 }
 console.groupEnd();
 
-console.groupCollapsed('12. Two Makes Ten - https://edabit.com/challenge/5erCDJ8eJDrXkmwTK');
+console.groupCollapsed('12. Sort the Unsortable - https://edabit.com/challenge/zemLfbNWaKuhrbJPt');
 {
-    function isTen(a,b)
+    function sortA(ar) 
         {
-            if (a+b == 10 || a == 10 || b == 10)
-                {
-                    return true;
-                }
-            else
-                {
-                    return false;
-                }
+            return	ar.sort((a, b) => a - b);
         }
     
-    console.log(isTen(7,3));
+    console.log(sortA([4, 1, 3]));
 }
 console.groupEnd();
 
-console.groupCollapsed('13. Two Makes Ten - https://edabit.com/challenge/5erCDJ8eJDrXkmwTK');
+console.groupCollapsed('13. Returning an "Add" Function - https://edabit.com/challenge/xtv5ZT7xDsHyrshTq');
 {
-    function isTen(a,b)
+    function add(a) 
         {
-            if (a+b == 10 || a == 10 || b == 10)
-                {
-                    return true;
-                }
-            else
-                {
-                    return false;
-                }
+            return b => a+b;
         }
     
-    console.log(isTen(7,3));
+    console.log(add(10)(20));
 }
 console.groupEnd();
 
-console.groupCollapsed('14. Two Makes Ten - https://edabit.com/challenge/5erCDJ8eJDrXkmwTK');
+console.groupCollapsed('14. Square Every Digit - https://edabit.com/challenge/Tnjbf6pdFsCjmaF8p');
 {
-    function isTen(a,b)
+    function digitSquare(a)
         {
-            if (a+b == 10 || a == 10 || b == 10)
-                {
-                    return true;
-                }
-            else
-                {
-                    return false;
-                }
+            const arrOfStrs = Array.from(String(a));
+            const dArray = arrOfStrs.map((a) => Number(a));
+            let ns = '';
+            dArray.forEach(dig => {
+                ns = ns+(dig*dig);
+            });
+
+            return ns;
         }
     
-    console.log(isTen(7,3));
+    console.log(digitSquare(9119));
 }
 console.groupEnd();
 
-console.groupCollapsed('15. Two Makes Ten - https://edabit.com/challenge/5erCDJ8eJDrXkmwTK');
+console.groupCollapsed('15. Is it Time for Milk and Cookies? - https://edabit.com/challenge/hPWnaSckJke5FXNEH');
 {
-    function isTen(a,b)
+    function timeForMilkAndCookies(d)
         {
-            if (a+b == 10 || a == 10 || b == 10)
+            const date2 = new Date(2000, 11, 24);
+            if (d.getMonth() === date2.getMonth() && d.getDate() === date2.getDate())
                 {
                     return true;
                 }
@@ -253,6 +222,6 @@ console.groupCollapsed('15. Two Makes Ten - https://edabit.com/challenge/5erCDJ8
                 }
         }
     
-    console.log(isTen(7,3));
+    console.log(timeForMilkAndCookies(new Date(2013, 11, 24)));
 }
 console.groupEnd();
