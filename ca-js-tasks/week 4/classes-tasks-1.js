@@ -28,36 +28,38 @@
   car1.price = car1.price + 100;
   car2.price = ??? + 100;
   ???
-6. Po padidinimo, vėl atsispausdinkite objektus ir pažiūrėkite pakitusias Automobilis objektų savybes*/
+6. Po padidinimo, vėl atsispausdinkite objektus ir pažiūrėkite pakitusias Automobilis objektų savybes.
+*/
 
-class Car 
-  {
-    constructor(brand, price, model) 
-      {
-        this.brand = brand;
-        this.price = price;
-        this.model = model;
-      }
+
+class Auto {
+  constructor(brand, model, price) {
+    this.brand = brand;
+    this.model = model;
+    this.price = price;
   }
+}   
 
-  const car1 = new Car("BMW", 10, "X5");
-  const car2 = new Car("Audi", 4, "A6");
-  const car3 = new Car("Opel", 30, "Astra");
+const car1 = new Auto("BMW", "A6", 300);
+const car2 = new Auto("Peugot", "308", 8000);
+const car3 = new Auto("Opel", "Astra", 1000);
 
-  console.log("\nModeliai:");
+console.log(car1.brand);
+console.log(car2.brand);
+console.log(car3.brand);
 
-  console.log(car1.model);
-  console.log(car2.model);
-  console.log(car3.model);
+console.log("");
 
-  console.log("\u20ac");
+console.log(car1.model);
+console.log(car2.model);
+console.log(car3.model);
 
-  console.log(car1.brand);
-  console.log(car2.brand);
-  console.log(car3.brand);
+console.log("");
 
-  console.log("\nKainos:");
+console.log(car1.price);
+console.log(car2.price);
+console.log(car3.price);
 
-  console.log(car1.price);
-  console.log(car2.price);
-  console.log(car3.price);
+car1.price = car1.price + 644;
+
+console.log(car1.price);
