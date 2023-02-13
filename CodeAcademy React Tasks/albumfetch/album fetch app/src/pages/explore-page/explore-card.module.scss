@@ -1,0 +1,129 @@
+.card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.75rem;
+  box-shadow: #0000000d 0px 0px 4px 1px;
+}
+
+.img {
+  width: 100%;
+  aspect-ratio: 1.6;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  cursor: pointer;
+}
+
+.content {
+  flex-grow: 1;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.right {
+  float: right;
+  text-align: right;
+}
+
+.details {
+  flex-grow: 1;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+  font-family: "IBM Plex Serif", serif;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.title:hover {
+  color: rgb(100, 100, 100);
+}
+
+.intro {
+  font-family: "Jost", sans-serif;
+  font-weight: 300;
+  line-height: 1.1rem;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  & > * {
+    flex-grow: 1;
+  }
+}
+
+.btnMore {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 8px;
+  cursor: pointer;
+
+  span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+  }
+
+  i {
+    font-size: 0.7rem;
+  }
+
+  span::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 0.5px;
+    bottom: -2px;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.2s ease-out;
+  }
+
+  span:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+}
+
+.topbar {
+  display: flex;
+  margin: 15px 0px;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.8rem;
+}
+
+.topbarTopic {
+  color: white;
+  background-color: rgb(45, 45, 45);
+  padding: 5px 10px;
+  border-radius: 1rem;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+}
+
+.topbarRead {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  color: #737373;
+}

@@ -1,0 +1,6 @@
+.layout {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: radial-gradient($white 30%, $secondary);
+}

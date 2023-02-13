@@ -1,0 +1,16 @@
+.link {
+  color: $black;
+  height: 50px;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  text-align: left;
+  border-radius: 10px;
+  &.child {
+    padding-left: 3rem;
+  }
+
+  &.active {
+    background-color: rgb(45, 45, 45);
+    color: white
+  }
+}

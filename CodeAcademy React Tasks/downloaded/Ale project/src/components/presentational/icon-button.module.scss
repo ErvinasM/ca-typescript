@@ -1,0 +1,43 @@
+.btn {
+  display: inline-grid;
+  place-items: center;
+  height: 36px;
+  width: 36px;
+  border: none;
+  border-radius: 50%;
+  background-color: $shadow;
+  font-size: 20px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $shadow-hover;
+  }
+}
+
+.primary {
+  &.outlined {
+    border: 2px solid $primary;
+  }
+
+  &.solid {
+    // stiliai...
+  }
+
+  & > svg {
+    color: $primary;
+  }
+}
+
+.white {
+  &.outlined {
+    border: 2px solid $white;
+  }
+
+  &.solid {
+    // stiliai...
+  }
+
+  & > svg {
+    color: $white;
+  }
+}

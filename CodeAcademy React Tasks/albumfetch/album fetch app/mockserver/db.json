@@ -1,0 +1,89 @@
+{
+    "post": [
+        {
+            "id": 1,
+            "title": "test"
+          }
+
+    ],
+
+    "blogs": [
+      {
+        "id": 1,
+        "author": "ChatGPT",
+        "created": "2020-12-09 03:31:13",
+        "image": "https://images.pexels.com/photos/5473952/pexels-photo-5473952.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load",
+        "category": "Programming",
+        "readtime": 3,
+        "title": "Getting Started with React: A Guide to Building Dynamic User Interfaces",
+        "body": "React is a popular JavaScript library for building user interfaces. It was developed by Facebook and is now maintained by Facebook and a community of individual developers and companies. React is used by many top companies and has a large developer community, making it a great choice for front-end web development.",
+        "intro": "React is a popular library for building dynamic user interfaces, maintained by Facebook and a community of developers and companies"
+      },
+      {
+        "id": 2,
+        "author": "ChatGPT",
+        "created": "2022-06-12 12:15:08",
+        "image": "https://images.pexels.com/photos/1365425/pexels-photo-1365425.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load",
+        "category": "Travel",
+        "readtime": 2,
+        "title": "The Ultimate Guide to Hiking: Tips and Tricks for a Safe and Fun Experience",
+        "body": "Hiking is a great way to get outside, enjoy nature, and get some exercise. Whether you're a beginner or an experienced hiker, it's important to be prepared and stay safe on the trail. This guide provides tips and tricks for a safe and enjoyable hiking experience.",
+        "intro": "Hiking offers exercise and enjoyment of nature, this guide provides tips for a safe and fun experience"
+      },
+      {
+        "id": 3,
+        "author": "ChatGPT",
+        "created": "2021-09-01 07:30:00",
+        "image": "https://images.pexels.com/photos/580151/pexels-photo-580151.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load",
+        "category": "Travel",
+        "readtime": 3,
+        "title": "Discovering the Best Cities in Europe: A Traveler's Guide",
+        "body": "Europe is home to some of the world's most beautiful and vibrant cities. From the charming streets of Paris to the lively squares of Madrid, there's something for everyone. This guide highlights the best cities in Europe for travelers, including tips on what to see, where to eat, and how to make the most of your trip.",
+        "intro": "Europe houses beautiful cities, this guide highlights the best for travelers with tips on sights, food and maximizing trip"
+      },
+      {
+        "id": 4,
+        "author": "ChatGPT",
+        "created": "2021-11-22 09:45:00",
+        "image": "https://images.pexels.com/photos/167579/pexels-photo-167579.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load",
+        "category": "Music",
+        "readtime": 3,
+        "title": "The History of Rock and Roll: From Elvis to the Beatles and Beyond",
+        "body": "Rock and roll is a genre of popular music that originated in the 1950s. It has had a profound impact on popular culture and has produced some of the biggest names in music history. This article explores the history of rock and roll, from its early roots to its current status as a cornerstone of popular music.",
+        "intro": "Explore the history of rock and roll, from its roots in the 1950s to its status as a cornerstone of popular culture"
+      },
+      {
+        "id": 5,
+        "author": "ChatGPT",
+        "created": "2021-07-14 14:20:00",
+        "image": "https://images.pexels.com/photos/3109167/pexels-photo-3109167.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load",
+        "category": "Literature",
+        "readtime": 3,
+        "title": "The Genius of William Shakespeare: A Look at His Life and Works",
+        "body": "William Shakespeare is widely regarded as one of the greatest playwrights in the English language. His works have been performed and read for centuries, and his influence can be seen in literature, theater, and popular culture. This article explores the life and works of William Shakespeare and why he remains so beloved today.",
+        "intro": "Explore the life and works of William Shakespeare, the renowned playwright and literary genius"
+      },
+      {
+        "id": 6,
+        "author": "ChatGPT",
+        "created": "2021-02-12 08:00:00",
+        "image": "https://cdn.pixabay.com/photo/2017/11/12/22/50/exhibition-2944064_1280.jpg",
+        "category": "Technology",
+        "readtime": 4,
+        "title": "The Rise of Facebook: From a Harvard Dorm Room to a Global Powerhouse",
+        "body": "Facebook is one of the largest and most influential technology companies in the world. It was founded in a Harvard dorm room in 2004 and has since grown into a global social media platform with over 2 billion monthly active users. This article explores the history and rise of Facebook, and how it has changed the way we communicate and consume information.",
+        "intro": "Discover the history and rise of Facebook, from a Harvard dorm room startup to a global powerhouse"
+      },
+      {
+        "id": 7,
+        "author": "ChatGPT",
+        "created": "2021-05-08 09:30:00",
+        "image": "https://cdn.pixabay.com/photo/2019/08/14/11/30/steam-machines-4405498_1280.jpg",
+        "category": "Invention",
+        "readtime": 4,
+        "title": "The Innovations of Thomas Edison: From the Light Bulb to the Phonograph",
+        "body": "Thomas Edison was one of the most prolific inventors in history, with over 1,000 patents to his name. He is best known for his development of the practical incandescent light bulb, as well as the phonograph and motion picture camera. This article explores the life and innovations of Thomas Edison, and how his inventions have had a lasting impact on society.",
+        "intro": "Thomas Edison, a prolific inventor with over 1,000 patents, is known for his light bulb, phonograph, and motion picture camera. This article explores his impactful innovations"
+      }
+    ]
+  }

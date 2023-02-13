@@ -1,0 +1,27 @@
+.content {
+  background: $dark-background;
+  color: $white;
+  padding: 2rem;
+}
+
+.brand {
+  color: $primary;
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+}
+
+.name {
+  font-size: 1.6rem;
+}
+
+.style {
+  color: $grey-light;
+}
+
+.propsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25rem;
+  padding: 1rem;
+}

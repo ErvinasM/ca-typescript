@@ -1,0 +1,16 @@
+1. [0.1] - pamokos darbo atkartojimas PAŽINGSNIUI
+
+2. [0.1] 
+  https://www.youtube.com/watch?v=9L0QhB-6xBI&list=PLC3y8-rFHvwh-K9mDlrrcDywl7CeVL2rO&index=10&ab_channel=Codevolution
+    Pažiūrėti 35-40 (įskaitant) video
+    Pateikiant pavyzdžius skirtinguose puslapiuose
+
+3. [0.1] Įgalinti logiką, kad  nebūtų užsklandos atidariu Menu elementą, 
+ir būtų reaguojama į kitus apspaudimus (be tarpinio atšaukiamojo paspaudimo)
+
+
+4. [0.1]
+  https://www.youtube.com/watch?v=9L0QhB-6xBI&list=PLC3y8-rFHvwh-K9mDlrrcDywl7CeVL2rO&index=10&ab_channel=Codevolution
+    Pažiūrėti 41-46 (įskaitant) video
+    Pateikiant pavyzdžius skirtinguose puslapiuose
+  

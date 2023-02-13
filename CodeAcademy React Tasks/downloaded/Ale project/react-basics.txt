@@ -1,0 +1,50 @@
+                                    JSX taisyklės
+1. Kiekvienas funkcinis komponentas PRIOVALO grąžinti JSX(atrodo kaip HTML)
+2. Komponento grąžintas JSX yra talpinamas į ReactDOM (virtualus naršyklės komponentų medis) pirmo vykdymo metu
+3. Kiekvienas komponentas privalo grąžinti TIK VIENĄ JSX elementą. Jegiu to daryti nenorite, privalote apgaubti JSX kodą fragmentu - <></>
+4. Savybės perduodamos funkciniam komponentam vadinamos "props". Jos visuomet yra priimamos pirmu parametru - objektu.
+5. Kintamieji kurie išsilaiko po perkrovimo, vadinami "state". Naudojant funkcinius kintamuosius, jie kuriami naudojant hook'są "useState"
+                                  React hooks  taisyklės
+1. Bet kokie "React hook'sai" privalo būti iškviečiami kiekvieną kartą persikraunant komponentui.
+  * Tai reiškia, kad negalite jų vykdyti salygiškai - if ir switch salygose.
+  * Tai reiškia kad neglaite aprašyti (salygoto) grąžinimo anksčiau nei įvsivykdė visi hook'sai
+
+                                  React.useState(PRADINĖ_REIKŠMĖ)
+1. "hook'so" React.useState(PRADINĖ_REIKŠMĖ) nustatoma tik pirmajį kartą.
+
+2. Norint keisti reikšmę ir matyti jos atnaujinimą naudoja speciali React funkcija "useState"
+  * funkcija grąžiną masyvą
+    * 1 elementas - reikšmė. Ji turi būti TIK naudojama. Tiesiogiai jos keisti negalima.
+    Naudojant šią reikšmę tiesiogiai, neišprovokuosite perkrovimo ir tai ilgainiui veda prie klaidų.
+
+    * 2 elementas - funkcija keisti reikšmei. Pakeitus reikšmė, automatiškai perkraunamas komponentas.
+    Jeigu, priskiriama reikšmė yra tokia pati, kaip šiuo metu esanti - komponentas neperkraunamas
+
+
+      React.useEffect(FUNKCIJA_KURI_BUS_VYKDOMA, MASYVAS_KURIO_ELEMENTŲ_POKYČIAI_IŠKVIES_FUNKCIJĄ)
+1. useEffect yra funkcija skirta reaguoti į pakitimus, ir atlikti papildomus veiksmus.
+2. praktikoje yra naudojami specifiniai variantai:
+   * useEffect(callback, NERA_ANTRO_PARAMETRO)
+     * callback funkcija išsikvies kiekvieną kartą
+
+    * useEffect(callback, [])
+     * callback funkcija išsikvies tik komponento sukūrimo metu
+
+    * useEffect(callback, [STEBIMAS_KINTAMASIS])
+      * callback funkcija išsikvies kiekvieną kartą, kuomet pasikeis STEBIMAS_KINTAMASIS
+3. useEffect'ui perduodama funkcija, gali grąžinti funkciją, ji vadima - "cleanup"
+   * useEffect(() => {
+      ... kodas atliekantis pokyčius
+     return () => {
+       // naikinami praeitos komponento iteracijos sukelti pokyčiai (remmoving side effects)
+     }
+   }, [... stebimi kintamieji ...])
+
+                                        Custom hook
+Tai funkcija, kuri gali būt naudojame viduje funkcijio React komponento.
+Jos aprašymas labai panašus kaip komponento, vientelis skirtumas grąžinimas:
+  React custom hook'as grąžina duomenis vietoj to, kad grąžintu JSX;                                        
+
+
+
+

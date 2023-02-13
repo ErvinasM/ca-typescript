@@ -1,0 +1,42 @@
+// Colors
+$shadePercentage: 6;
+
+$primary: #d87300;
+$primary-light: lighten($primary, $shadePercentage);
+$primary-dark: darken($primary, $shadePercentage);
+
+$secondary: #fff6df;
+$secondary-light: lighten($secondary, $shadePercentage);
+$secondary-dark: darken($secondary, $shadePercentage);
+
+$dark: rgb(80, 36, 0);
+$dark-light: lighten($dark, $shadePercentage);
+$dark-dark: darken($dark, $shadePercentage);
+$dark-background: linear-gradient(to right bottom, $dark-light, $dark);
+
+$shadow: #0003;
+$shadow-hover: #0004;
+$white: #fff;
+$muted: #777;
+$grey-light: #bbb;
+
+$text-white: $white;
+$page-background: #f5f5f5;
+
+// Shapes
+$border-radius: 4px;
+
+// Breakpoints
+$mobileBr: 0;
+$tabletBr: 600px;
+$desktopBr: 1200px;
+
+$breakpoints: (
+  mobile: $mobileBr,
+  tablet: $tabletBr,
+  desktop: $desktopBr,
+);
+
+$z-index-drawer: 1000;
+$z-index-drawer-toggler: $z-index-drawer - 1;
+$z-index-drawer-overlay: $z-index-drawer - 2;

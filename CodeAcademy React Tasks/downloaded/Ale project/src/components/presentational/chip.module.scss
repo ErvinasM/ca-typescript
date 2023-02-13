@@ -1,0 +1,9 @@
+.chip {
+  display: inline-grid;
+  place-items: center;
+  color: $white;
+  border: 2px solid $white;
+  padding: 0.2em 0.4em;
+  border-radius: $border-radius;
+  font-weight: 600;
+}

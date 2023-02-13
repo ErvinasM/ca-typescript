@@ -1,0 +1,106 @@
+$py: 1.5rem;
+$px: 1.25rem;
+$slide-animation-time: 900;
+$slide-animation-delay: 50;
+$slide-animation-compound-time: $slide-animation-time + $slide-animation-delay;
+
+.gallery {
+  position: relative;
+  padding: $py $px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  height: 100%;
+  background: $white;
+}
+
+.id {
+  display: inline-grid;
+  place-items: center;
+  position: absolute;
+  left: $px;
+  top: $py;
+  color: $grey-light;
+  border: 2px solid $grey-light;
+  padding: 0.2em 0.4em;
+  border-radius: $border-radius;
+  font-weight: 600;
+}
+
+.imgContainer {
+  flex-grow: 1;
+  margin-top: 30px;
+  overflow: hidden;
+}
+
+.slider {
+  position: relative;
+  height: 100%;
+
+  &.right {
+    animation: slideRight #{$slide-animation-time}ms ease-in-out #{$slide-animation-delay}ms forwards;
+  }
+
+  &.left {
+    animation: slideLeft #{$slide-animation-time}ms ease-in-out #{$slide-animation-delay}ms forwards;
+  }
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+  object-position: center;
+  object-fit: contain;
+
+  &.left {
+    position: absolute;
+    right: 100%;
+  }
+
+  &.right {
+    position: absolute;
+    left: 100%;
+  }
+}
+
+.bulletContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+
+.bullet {
+  display: inline-block;
+  height: 0.8rem;
+  width: 0.8rem;
+  border-radius: 50%;
+  background: $grey-light;
+}
+
+.bullet.active {
+  background: $primary;
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+:export {
+  animationTimeString: $slide-animation-compound-time;
+}

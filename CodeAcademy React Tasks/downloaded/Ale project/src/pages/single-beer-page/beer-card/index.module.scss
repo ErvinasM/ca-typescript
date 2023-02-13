@@ -1,0 +1,8 @@
+.layout {
+  display: grid;
+  grid-template-columns: 350px auto;
+  width: 800px;
+  height: 500px;
+  box-shadow: 0 6px 16px 4px $shadow;
+  background: $white;
+}

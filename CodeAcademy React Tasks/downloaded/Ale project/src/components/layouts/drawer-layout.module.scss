@@ -1,0 +1,80 @@
+$drawerWidth: 300px;
+$drawerMargin: 54px;
+$opacity: 0.9;
+
+.drawer {
+  position: fixed;
+  background: linear-gradient(to right bottom, rgba($dark-light, $opacity), rgba($dark, $opacity));
+  left: -$drawerWidth;
+  width: $drawerWidth;
+  height: 100vh;
+  padding: 1rem 0.5rem 1rem 1rem;
+  color: $text-white;
+  transition: left 0.45s ease-in-out;
+  z-index: $z-index-drawer;
+}
+
+.drawer.open {
+  left: 0;
+}
+
+.main {
+  min-height: 100vh;
+  position: relative;
+  transition: padding-left 0.45s ease-in-out;
+}
+
+.main.open:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0009;
+  filter: blur(2px);
+  z-index: $z-index-drawer-overlay;
+}
+
+.toggler {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: $z-index-drawer-toggler;
+}
+
+@media screen and (min-width: $tabletBr) {
+  .drawer {
+    left: -$drawerWidth + $drawerMargin;
+  }
+
+  .main {
+    padding-left: $drawerMargin;
+  }
+
+  .main.open {
+    padding-left: $drawerWidth;
+  }
+}
+
+@media screen and (min-width: $desktopBr) {
+  .drawer {
+    left: 0;
+  }
+
+  .drawer.open {
+    left: 0;
+  }
+
+  .main {
+    padding-left: $drawerWidth;
+  }
+
+  .main.open {
+    padding-left: $drawerWidth;
+  }
+
+  .toggler {
+    display: none;
+  }
+}

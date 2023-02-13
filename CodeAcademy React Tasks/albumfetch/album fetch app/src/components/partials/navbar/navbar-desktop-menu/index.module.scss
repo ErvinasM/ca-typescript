@@ -1,0 +1,40 @@
+.links {
+  display: none;
+  height: $navbar-height;
+  max-width: $xl;
+  margin: auto;
+  font-family: "Jost", sans-serif;
+  font-weight: 300;
+  @media (min-width: $navbar-expand-breakpoint) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.logo {
+  font-family: 'Bebas Neue', cursive;
+  color: white;
+  font-size: 1.7rem;
+}
+
+.abtn {
+  font-family: "Jost", sans-serif;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  gap: 10px;
+  border-radius: 5px;
+  background: #f9f9f9;
+  color: #2d2d2d;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.navLinks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
